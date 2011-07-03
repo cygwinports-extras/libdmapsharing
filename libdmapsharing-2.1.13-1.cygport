@@ -1,0 +1,10 @@
+inherit gnome2
+
+
+HOMEPAGE="http://www.flyn.org/projects/libdmapsharing/"
+SRC_URI="http://www.flyn.org/projects/libdmapsharing/${P}.tar.gz"
+PATCH_URI="2.1.13-no-undefined.patch"
+
+PKG_NAMES="libdmapsharing2 libdmapsharing-devel"
+libdmapsharing2_CONTENTS="usr/bin/cygdmapsharing-2.dll usr/share/doc/"
+libdmapsharing_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gtk-doc/"
